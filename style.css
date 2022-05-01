@@ -1,0 +1,259 @@
+body{
+    font-family: "Montserrat";
+}
+#title
+{
+    /* color: #ff4c68; */
+    background-color: #ff4c68;
+    color: white;
+}
+.container-fluid
+{
+    padding: 3% 15%;
+}
+/* h1
+{
+    font-family: "Montserrat-Black";
+    font-size: 3rem;
+    line-height: 1.5;
+} */
+.navbar{
+    padding-bottom:6.5rem;
+}
+.navbar-brand
+{
+    font-family: "Ubuntu";
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+.icon
+{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+.icon:hover
+{
+    color: #ff4c68;
+}
+p
+{
+    color: gray;
+}
+.press-logo
+{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+h3
+{
+    font-family: 'Merriweather', serif;
+}
+.title-image
+{
+    width: 15%;
+    transform: rotate(25deg);
+    /* note the z index will not work only if the position is static 
+    z index basically change the layer positioning towards the user*/
+    position: absolute;
+}
+#cta
+{
+    /* background-color: #ff4c68; */
+    color: white;
+    padding: 7% 15%;
+}
+
+@media(max-width:1028px)
+{
+    #title
+    {
+        text-align: center;
+    }
+    .title-image
+    {
+        position: static;
+        transform: rotate(0);
+        padding-top: 4%;
+        width: 40%;
+    }
+}
+.design
+{
+    padding-bottom: 6%;
+}
+#features
+{
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+}
+.feature-box
+{
+    text-align: center;
+    padding: 4.5%;
+}
+h2{
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+#testimonials
+{
+    padding: 7% 15%;
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+.pricing-heading
+{
+    text-align: center;
+    padding-bottom: 3%;
+}
+.test-image
+{
+    /* to make round an image we can use border radius */
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+#press
+{
+    /* color: #ef8172; */
+    background-color: #ef8172;
+    text-align: center;
+    /* padding: ; */
+    padding-bottom: 3%;
+}
+.price-sec-wrap {
+    width: 100%;
+    float: left;
+    padding: 60px 0;
+    font-family: 'Lato', sans-serif;
+}
+.main-heading {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+    position: relative;
+    text-transform: capitalize;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.price-box {
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.10);
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+}
+.price-box ul {
+    padding: 10px 0px 30px;
+    margin: 17px 0 0 0;
+    list-style: none;
+    border-top: solid 1px #e9e9e9;
+}
+.price-box ul li {
+    padding: 7px 0;
+    font-size: 14px;
+    color: #808080;
+}
+.price-box ul li .fas {
+    color: #68AE4A;
+    margin-right: 7px; 
+    font-size: 12px;
+}
+.price-label {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.34;
+    margin-bottom: 0;
+    padding: 6px 15px;
+    display: inline-block;
+    border-radius: 3px; 
+}
+.price-label.basic {
+    background: #E8EAF6;
+    color: #3F51B5;
+}
+.price-label.value {
+    background: #E8F5E9;
+    color: #4CAF50;
+}
+.price-label.premium {
+    background: #FBE9E7;
+    color: #FF5722;
+}
+.price {
+    font-size: 44px;
+    line-height: 44px;
+    margin: 15px 0 6px;
+    font-weight: 900;
+}
+.price-info {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.67;
+    color: inherit;
+    width: 100%;
+    margin: 0;
+    color: #989898;
+}
+.plan-btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: block;
+  padding: 11px 30px;
+  border: 2px solid #b3b3b3;
+  color: #000;
+  margin-top: 5px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  border-radius: 5px;
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+}
+.plan-btn::after {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #000;
+  z-index: -1;
+  transition: all 0.35s ease-in-out;
+}
+.plan-btn:hover::after {
+  left: 0;
+}
+.plan-btn:hover, 
+.plan-btn:focus {
+    text-decoration: none;
+    color: #fff;
+  border: 2px solid #000;
+}
+@media (max-width: 991px) {
+    .price-box {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 575px) {
+    .main-heading {
+        font-size: 21px;
+    }
+    .price-box {
+        margin-bottom: 20px;
+    }
+}
+.copyright
+{
+    text-align: center;
+}
+#pricing
+{
+    background-color: white;
+}
